@@ -960,12 +960,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2a8d3b02bdcf4468562ac47a4ea56a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2efeff398f23f9e47a69a0965aab9c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensX: 400
   sensY: 400
   orientation: {fileID: 1953880415}
+  camHolder: {fileID: 871656267}
 --- !u!1 &349829071
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,23 +4139,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 885656897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb76710a4e5b9504098570d13daaf717, type: 3}
+  m_Script: {fileID: 11500000, guid: 34ca58fc4d5dd5546837600af58d6a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   whatIsWall:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1536
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1536
   wallRunForce: 200
-  wallClimbSpeed: 1.5
-  maxWallRunTime: 0
+  wallJumpUpForce: 0
+  wallJumpSideForce: 0
+  wallClimbSpeed: 3
+  maxWallRunTime: 1.5
+  jumpKey: 32
   upwardsRunKey: 304
   downwardsRunKey: 306
   wallCheckDistance: 0.7
   minJumpHeight: 2
+  exitWallTime: 0.2
+  useGravity: 0
+  gravityCounterForce: 20
   orientation: {fileID: 1953880415}
+  cam: {fileID: 330585549}
 --- !u!1 &889805891
 GameObject:
   m_ObjectHideFlags: 0
