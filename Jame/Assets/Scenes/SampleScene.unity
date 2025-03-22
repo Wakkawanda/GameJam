@@ -988,17 +988,33 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  _speed: 10
-  _speedWalk: 8
-  _speedBack: 8
-  _speedRun: 10
-  _speedCrouch: 2
-  _jumpH: 1
+  playerCamera: {fileID: 330585545}
+  _currentSpeed: 0
+  stat: 0
+  MaxSpeed: 1
+  SprintSpeed: 12
+  RunningSpeed: 10
+  WalkingSpeed: 8
+  BackSpeed: 5
+  SpeedCrouch: 2
+  FirstOverclocking: 4
+  "First\u0410cceleration": 6
+  "Second\u0410cceleration": 10
+  Deceleration: 100
   _gravity: -9.8
   _groundDistance: 0.4
-  _velocity: {x: 0, y: 0, z: 0}
   _isGrounded: 0
-  _isCeiling: 0
+  _velocity: {x: 0, y: 0, z: 0}
+  _jumpH: 1
+  _horizontalInertia: 0.5
+  InertiaSpeed: 6
+  _inertiaVelocity: {x: 0, y: 0, z: 0}
+  isTackle: 0
+  isCrouching: 0
+  crouchHeight: 0.5
+  crouchSpeed: 3.5
+  crouchTransitionSpeed: 10
+  crouchCameraOffset: -0.5
 --- !u!143 &536286995
 CharacterController:
   m_ObjectHideFlags: 0
